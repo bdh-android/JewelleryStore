@@ -1,0 +1,16 @@
+
+to import api.sql 
+
+Log into phpMyAdmin
+
+create empty database with name api
+
+Select the database on the left pane
+
+Click on the Import tab in the top center pane.
+
+Under the File to import section, click Browse and locate the file  api.sql.
+
+From the Format dropdown menu choose 'SQL'.
+
+Click the Go button at the bottom to import the database
