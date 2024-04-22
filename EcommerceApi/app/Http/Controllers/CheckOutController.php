@@ -14,16 +14,16 @@ class CheckOutController extends Controller
 
  	 $braintree = config('braintree');
     $clienttoken = $braintree->clientToken()->generate();
- 	 
-   return $this->returnData("client_token",$clienttoken,"S000","");
- 	 
+
+   return $this->returnData("data",$clienttoken,"S000","");
+
  }
 
 
 
 public function sale(Request $request)
 {
-	 
+
 	$order_id=$request->order_id;//we pass order_id to update order status when user pay successfully or delete the order if not success
      $user_Id=$request->user_id;
 
@@ -33,37 +33,39 @@ public function sale(Request $request)
         'paymentMethodNonce' =>$request->nonce,
 		'options'=>['submitForSettlement'=>True]
     ]);
-    
+    //var_dump($result);
      if ($result->success) {
      	Order::where('id',$order_id)->update(['approve_payment'=>1]);
      	$this->clearUserCart($user_Id);
+		 return $this->returnData("data",$result,"S000","success payment");
      }else {
-        
+
         $this->clearOrder($order_id);
-        
+         return $this->returnError("p001","Failed payment");
+
      }
-	 
-    return response()->json($result);
+
+    //return response()->json($result);
 }
 
  public function clearOrder($order_id){
-       
+
 
         $order =Order::find($order_id);
 
         $order->rel_order_details()->delete();
         $order->delete();
-       
+
      }
 
 public function clearUserCart($userId){
 
-       
+
        $user =User::find($userId);
-         
+
         $user->rel_user_cart()->delete();
 
-        
-      
+
+
     }
 }

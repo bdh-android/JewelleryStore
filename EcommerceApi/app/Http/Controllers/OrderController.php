@@ -32,16 +32,17 @@ use ResponseTrait;
                  
               
                 $productId=(int)$product['product_id'];
-                $productcount=(int)$product['count'];;
+                $productcount=(int)$product['count'];
                $productsize=$product['size'];
                $order=Order::find($orderid);
                $order->rel_order_details()->create(['product_id'=>$productId,'count'=>$productcount,'size'=>$productsize]);
 
             }
-			return $this->returnData("order_id",$orderid,"S000","data inserted");
+			return $this->returnData("data",$orderid,"S000","data inserted");
           
         }catch (\Exception $e){
-            return response()->json(['msg'=>"error" .$e]);
+			return $this->returnData("data","","R000","error" .$e);
+           // return response()->json(['msg'=>"error" .$e]);
         }
 
         
@@ -51,8 +52,8 @@ use ResponseTrait;
 
         $user=User::find($request->user_id);
         $orders= $user->rel_order()->where('approve_payment',1)->get();
-	 
-         return response()->json($orders);
+	 return $this->returnData("data",$orders,"S000","");
+         //return response()->json($orders);
         
 		  
     }
@@ -67,7 +68,8 @@ use ResponseTrait;
 
         $order->rel_order_details()->delete();
         $order->delete();
-        return response()->json("order is deleted");
+		return $this->returnData("data","","S000","done");
+       // return response()->json("order is deleted");
      }
 
      

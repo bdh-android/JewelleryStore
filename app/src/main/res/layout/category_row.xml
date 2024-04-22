@@ -3,6 +3,7 @@
 
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_marginStart="2dp"
     android:layout_marginTop="10dp"
     android:layout_marginEnd="2dp"
@@ -13,7 +14,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        android:padding="12sp"
+
+        android:padding="12dp"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:textColor="@color/black"
         android:textSize="18sp" />
 
     <LinearLayout
@@ -26,7 +31,8 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/child_recyclerview"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            />
     </LinearLayout>
 
 

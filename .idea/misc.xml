@@ -1,5 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/HP/AndroidStudioProjects/bdh-android/simple_e_commerce_store/app/src/main/res/drawable-v21/ic_menu_send.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/bdh-android/simple_e_commerce_store/app/src/main/res/drawable/ic_profile.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/bdh-android/simple_e_commerce_store/app/src/main/res/drawable/ic_undraw_gifts_0ceh.xml" value="0.1545" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/bdh-android/simple_e_commerce_store/app/src/main/res/drawable/ic_undraw_jewelry_iima.xml" value="0.2105" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/bdh-android/simple_e_commerce_store/app/src/main/res/layout/activity_auth.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/bdh-android/simple_e_commerce_store/app/src/main/res/layout/app_bar_splash.xml" value="0.14492753623188406" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/bdh-android/simple_e_commerce_store/app/src/main/res/layout/category_row.xml" value="0.25" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/bdh-android/simple_e_commerce_store/app/src/main/res/layout/content_splash.xml" value="0.22" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/bdh-android/simple_e_commerce_store/app/src/main/res/layout/custom_view_layout.xml" value="0.14990942028985507" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/bdh-android/simple_e_commerce_store/app/src/main/res/layout/fragment_category.xml" value="0.11911231884057971" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/bdh-android/simple_e_commerce_store/app/src/main/res/layout/fragment_orders.xml" value="0.14" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/bdh-android/simple_e_commerce_store/app/src/main/res/layout/fragment_password.xml" value="0.25" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/bdh-android/simple_e_commerce_store/app/src/main/res/layout/fragment_product.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/bdh-android/simple_e_commerce_store/app/src/main/res/layout/fragment_product_detials.xml" value="0.25" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/bdh-android/simple_e_commerce_store/app/src/main/res/layout/fragment_profile.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/bdh-android/simple_e_commerce_store/app/src/main/res/layout/fragment_register.xml" value="0.25" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/bdh-android/simple_e_commerce_store/app/src/main/res/layout/fragment_sign_in.xml" value="0.2" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/bdh-android/simple_e_commerce_store/app/src/main/res/layout/item_network_state.xml" value="0.14492753623188406" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/bdh-android/simple_e_commerce_store/app/src/main/res/layout/nav_header_splash.xml" value="0.14492753623188406" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/bdh-android/simple_e_commerce_store/app/src/main/res/layout/payment_fragment.xml" value="0.25" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/bdh-android/simple_e_commerce_store/app/src/main/res/layout/search_product_row.xml" value="0.12771739130434784" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/bdh-android/simple_e_commerce_store/app/src/main/res/layout/shipping_details_fragment.xml" value="0.22" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/bdh-android/simple_e_commerce_store/app/src/main/res/layout/slider_row.xml" value="0.12771739130434784" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/bdh-android/simple_e_commerce_store/app/src/main/res/menu/main_menu.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/bdh-android/simple_e_commerce_store/app/src/main/res/menu/search_menu.xml" value="0.21875" />
+      </map>
+    </option>
+  </component>
+  <component name="NullableNotNullManager">
+    <option name="myDefaultNullable" value="androidx.annotation.Nullable" />
+    <option name="myDefaultNotNull" value="androidx.annotation.NonNull" />
+    <option name="myNullables">
+      <value>
+        <list size="12">
+          <item index="0" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.compatqual.NullableDecl" />
+          <item index="1" class="java.lang.String" itemvalue="org.jetbrains.annotations.Nullable" />
+          <item index="2" class="java.lang.String" itemvalue="androidx.annotation.Nullable" />
+          <item index="3" class="java.lang.String" itemvalue="org.eclipse.jdt.annotation.Nullable" />
+          <item index="4" class="java.lang.String" itemvalue="com.android.annotations.Nullable" />
+          <item index="5" class="java.lang.String" itemvalue="edu.umd.cs.findbugs.annotations.Nullable" />
+          <item index="6" class="java.lang.String" itemvalue="androidx.annotation.RecentlyNullable" />
+          <item index="7" class="java.lang.String" itemvalue="android.support.annotation.Nullable" />
+          <item index="8" class="java.lang.String" itemvalue="javax.annotation.CheckForNull" />
+          <item index="9" class="java.lang.String" itemvalue="javax.annotation.Nullable" />
+          <item index="10" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.qual.Nullable" />
+          <item index="11" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.compatqual.NullableType" />
+        </list>
+      </value>
+    </option>
+    <option name="myNotNulls">
+      <value>
+        <list size="11">
+          <item index="0" class="java.lang.String" itemvalue="androidx.annotation.RecentlyNonNull" />
+          <item index="1" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.qual.NonNull" />
+          <item index="2" class="java.lang.String" itemvalue="com.android.annotations.NonNull" />
+          <item index="3" class="java.lang.String" itemvalue="androidx.annotation.NonNull" />
+          <item index="4" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.compatqual.NonNullType" />
+          <item index="5" class="java.lang.String" itemvalue="edu.umd.cs.findbugs.annotations.NonNull" />
+          <item index="6" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.compatqual.NonNullDecl" />
+          <item index="7" class="java.lang.String" itemvalue="android.support.annotation.NonNull" />
+          <item index="8" class="java.lang.String" itemvalue="org.jetbrains.annotations.NotNull" />
+          <item index="9" class="java.lang.String" itemvalue="javax.annotation.Nonnull" />
+          <item index="10" class="java.lang.String" itemvalue="org.eclipse.jdt.annotation.NonNull" />
+        </list>
+      </value>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

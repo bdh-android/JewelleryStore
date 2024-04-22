@@ -17,9 +17,10 @@ use ResponseTrait;
         $category=Category::find($id);
         
         $products=$category->rel_products()->paginate(10);
-		sleep(2);//to simulate some delay . test
+		//sleep(2);//to simulate some delay . test
        
          return response()->json($products);
+		 
     }
 
 
@@ -28,8 +29,11 @@ use ResponseTrait;
 
 
         $products=Product::with('rel_Product_size','rel_Product_image')->where('id',$id)->find($id);
-		sleep(2);//to simulate some delay . test
-        return $this->returnData("product",$products,"","");
+		if ($products == null){
+			$products=[];
+		}
+		//sleep(2);//to simulate some delay . test
+        return $this->returnData("data",$products,"","");
         
     }
 

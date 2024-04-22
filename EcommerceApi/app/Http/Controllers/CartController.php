@@ -44,13 +44,13 @@ class CartController extends Controller
                  
               
                 $productId=(int)$product['product_id'];
-                $productcount=(int)$product['amount'];;
+                $productcount=(int)$product['amount'];
                $productsize=$product['size'];
                 $user->rel_user_cart()->create(['product_id'=>$productId,'amount'=>$productcount,'size'=>$productsize]);
 
             }
 
-            return $this->returnData("message","cart inserted successfuly","m002","");
+            return $this->returnData("data","","S000","cart inserted successfuly");
            
     }
 
@@ -69,7 +69,7 @@ class CartController extends Controller
            return $this->returnData("data",$cartitems);
         
         }else{
-            return $this->returnData("message","There are not products in the cart","m001","Cart empty..");
+            return $this->returnData("data",[],"m001","Cart empty..");
           
         }
     }

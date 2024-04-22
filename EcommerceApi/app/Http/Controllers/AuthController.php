@@ -17,7 +17,7 @@ class AuthController extends Controller
     use ResponseTrait;
 
 	public function __construct(){
-		 
+
 	}
 
     /**
@@ -28,18 +28,18 @@ class AuthController extends Controller
      */
     public function login(Request $request)
     {
-		
+
     	$credentials=$request->only(['email', 'password']);
-        $validator= $this->validator($request->all(),true); 
+        $validator= $this->validator($request->all(),true);
             if ($validator->fails()){
               $code=$this->returnCodeAccordingToInput($validator);
               return $this->returnValidationError($code,$validator);
-              
+
             }
-        
+
         if (! $token = $this->guard()->attempt($credentials)) {
 			return $this->returnData("error","Unauthorized","U000","your password or email is wrong");
-          
+
         }
 
         return $this->respondWithToken($token);
@@ -54,10 +54,11 @@ class AuthController extends Controller
     //return logged in user
     public function me(Request $request)
     {
-          
+ 
          $user=$this->guard()->user();
+		
           return $this->returnData("data",$user,"S000","");
-         
+
     }
 
     /**
@@ -69,8 +70,8 @@ class AuthController extends Controller
     {
         $this->guard()->logout();
 
-         return $this->returnData("message","","S000","successfully logged out");
-        
+         return $this->returnData("data","","S000","successfully logged out");
+
     }
 
     /**
@@ -101,7 +102,7 @@ class AuthController extends Controller
         ];
 
         return $this->returnData("data",$data,"S000","");
-         
+
     }
 
 
@@ -109,7 +110,7 @@ class AuthController extends Controller
 
     protected function validator(array $data,$isLogin)
     {
-         
+
         if ($isLogin) {
             return Validator::make($data,[
             'email' => ['required', 'string', 'email', 'max:255','exists:users,email'],
@@ -126,7 +127,7 @@ class AuthController extends Controller
         }
     }
 
-  
+
     public function registernewuser(Request $request){
 
 
@@ -135,20 +136,20 @@ class AuthController extends Controller
             if ($validator->fails()){
               $code=$this->returnCodeAccordingToInput($validator);
               return $this->returnValidationError($code,$validator);
-                
+
             }
 
-        
+
 
 
        $user= User::create([
             'name' => $request->name,
             'email' => $request->email,
             'password' => Hash::make($request->password)
-			
+
         ]);
         return $this->returnData("data",$user,"S000","user created");
-        
+
     }
 
 

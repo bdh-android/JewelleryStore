@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".profile.ui.profile.ProfileFragment">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/user_name_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/user_name"
+        style="@style/profileLabelText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/user_name_field"
+        style="@style/ProfileFieldText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/user_name_label"
+        app:layout_constraintStart_toEndOf="@id/user_name_label"
+        app:layout_constraintTop_toTopOf="@+id/user_name_label" />
+    <TextView
+        android:id="@+id/user_email_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/user_email"
+        style="@style/profileLabelText"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_name_label"/>
+
+    <TextView
+        android:id="@+id/user_email_field"
+        style="@style/ProfileFieldText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/user_email_label"
+        app:layout_constraintStart_toEndOf="@id/user_email_label"
+        app:layout_constraintTop_toTopOf="@+id/user_email_label" />
+    <TextView
+        android:id="@+id/user_adress_label_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/e_address_line_1"
+        style="@style/profileLabelText"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_email_label"/>
+
+    <TextView
+        android:id="@+id/user_adress_field1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintBottom_toTopOf="@+id/user_adress_label_2"
+        app:layout_constraintStart_toStartOf="@+id/user_adress_label_1"
+        app:layout_constraintTop_toBottomOf="@+id/user_adress_label_1" />
+
+    <TextView
+        android:id="@+id/user_adress_label_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/e_address_line_2"
+        style="@style/profileLabelText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_adress_field1" />
+
+    <TextView
+        android:id="@+id/user_adress_field2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        app:layout_constraintStart_toStartOf="@+id/user_adress_label_2"
+        app:layout_constraintTop_toBottomOf="@+id/user_adress_label_2" />
+
+    <TextView
+        android:id="@+id/user_phone_label"
+        style="@style/profileLabelText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/e_phone_number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_adress_field2" />
+
+    <TextView
+        android:id="@+id/user_phone_field"
+        style="@style/ProfileFieldText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/user_phone_label"
+        app:layout_constraintStart_toEndOf="@+id/user_phone_label"
+        app:layout_constraintTop_toTopOf="@+id/user_phone_label" />
+
+    <TextView
+        android:id="@+id/user_zip_label"
+        style="@style/profileLabelText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/e_zip"
+        app:layout_constraintStart_toEndOf="@+id/user_phone_field"
+        app:layout_constraintTop_toBottomOf="@+id/user_adress_field2" />
+
+    <TextView
+        android:id="@+id/user_zip_field"
+        style="@style/ProfileFieldText"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/user_zip_label"
+        app:layout_constraintStart_toEndOf="@+id/user_zip_label"
+        app:layout_constraintTop_toTopOf="@+id/user_zip_label" />
+    <TextView
+        android:id="@+id/user_country_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/e_country"
+        style="@style/profileLabelText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_phone_label"/>
+
+    <TextView
+        android:id="@+id/user_country_field"
+        style="@style/ProfileFieldText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintBottom_toBottomOf="@+id/user_country_label"
+        app:layout_constraintStart_toEndOf="@+id/user_country_label"
+        app:layout_constraintTop_toTopOf="@+id/user_country_label" />
+
+    <TextView
+        android:id="@+id/user_state_label"
+        style="@style/profileLabelText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="@string/e_state"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_country_label" />
+
+    <TextView
+        android:id="@+id/user_state_field"
+        style="@style/ProfileFieldText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintBottom_toBottomOf="@+id/user_state_label"
+        app:layout_constraintStart_toEndOf="@+id/user_state_label"
+        app:layout_constraintTop_toTopOf="@+id/user_state_label" />
+
+    <TextView
+        android:id="@+id/user_city_label"
+        style="@style/profileLabelText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/e_city"
+        app:layout_constraintStart_toEndOf="@id/user_state_field"
+        app:layout_constraintTop_toBottomOf="@+id/user_country_label" />
+
+    <TextView
+        android:id="@+id/user_city_field"
+        style="@style/ProfileFieldText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/user_state_label"
+        app:layout_constraintStart_toEndOf="@+id/user_city_label"
+        app:layout_constraintTop_toTopOf="@+id/user_city_label" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/open_orders_screen"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="Display All Orders"
+        android:textAllCaps="false"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_state_label"
+        app:layout_constraintWidth_percent="0.8" />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/open_reset_password_screen"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="Reset Password"
+        android:textAllCaps="false"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        app:layout_constraintTop_toBottomOf="@id/open_orders_screen"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/logout"
+        style="@style/button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+
+        android:textAllCaps="false"
+        android:text="Log out"
+        app:layout_constraintDimensionRatio="W, 1.5:10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/open_reset_password_screen"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <ProgressBar
+        android:id="@+id/progressBar3"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.core.widget.NestedScrollView>

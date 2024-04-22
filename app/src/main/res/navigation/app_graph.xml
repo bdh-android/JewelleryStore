@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_graph.xml"
+    app:startDestination="@id/categoryFragment">
+
+    <fragment
+        android:id="@+id/categoryFragment"
+        android:name="com.example.e_commerce_store.products.ui.CategoryFragment"
+        android:label="fragment_category"
+        tools:layout="@layout/fragment_category" >
+
+        <action
+            android:id="@+id/action_categoryFragment_to_productFragment"
+            app:destination="@id/productFragment" />
+        <action
+            android:id="@+id/action_categoryFragment_to_productDetialsFragment"
+            app:destination="@id/productDetialsFragment" />
+        <action
+            android:id="@+id/action_categoryFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_categoryFragment_to_cartFragment"
+            app:destination="@id/cartFragment" />
+        <action
+            android:id="@+id/action_categoryFragment_to_signInFragment2"
+            app:destination="@id/signInFragment2"
+            app:popUpTo="@id/categoryFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/productFragment"
+        android:name="com.example.e_commerce_store.products.ui.ProductFragment"
+        android:label="fragment_product"
+        tools:layout="@layout/fragment_product" >
+        <action
+            android:id="@+id/action_productFragment_to_productDetialsFragment"
+            app:destination="@id/productDetialsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/productDetialsFragment"
+        android:name="com.example.e_commerce_store.products.ui.ProductDetialsFragment"
+        android:label="ProductDetialsFragment" />
+    <fragment
+        android:id="@+id/paymentFragment"
+        android:name="com.example.e_commerce_store.checkoutandpayment.payment.ui.PaymentFragment"
+        android:label="payment_fragment"
+        tools:layout="@layout/payment_fragment" />
+    <fragment
+        android:id="@+id/passwordFragment"
+        android:name="com.example.e_commerce_store.profile.ui.resetpassword.PasswordFragment"
+        android:label="fragment_password"
+        tools:layout="@layout/fragment_password" />
+    <fragment
+        android:id="@+id/ordersFragment"
+        android:name="com.example.e_commerce_store.profile.ui.order.OrdersFragment"
+        android:label="OrdersFragment" />
+    <fragment
+        android:id="@+id/shippingDetailsFragment"
+        android:name="com.example.e_commerce_store.checkoutandpayment.shippingdetails.ui.ShippingDetailsFragment"
+        android:label="shipping_details_fragment"
+        tools:layout="@layout/shipping_details_fragment" >
+        <action
+            android:id="@+id/action_shippingDetailsFragment_to_paymentFragment"
+            app:destination="@id/paymentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.e_commerce_store.profile.ui.profile.ProfileFragment"
+        android:label="profile_fragment"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_passwordFragment"
+            app:destination="@id/passwordFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_ordersFragment"
+            app:destination="@id/ordersFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_signInFragment2"
+            app:destination="@id/signInFragment2"
+            app:popUpTo="@id/categoryFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="com.example.e_commerce_store.cart.ui.CartFragment"
+        android:label="cart_fragment"
+        tools:layout="@layout/fragment_cart" >
+        <action
+            android:id="@+id/action_cartFragment_to_shippingDetailsFragment"
+            app:destination="@id/shippingDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signInFragment2"
+        android:name="com.example.e_commerce_store.Auth.ui.SignInFragment"
+        android:label="fragment_sign_in"
+        tools:layout="@layout/fragment_sign_in" >
+        <action
+            android:id="@+id/action_signInFragment2_to_registerFragment2"
+            app:destination="@id/registerFragment2" />
+        <action
+            android:id="@+id/action_signInFragment2_to_categoryFragment"
+            app:destination="@id/categoryFragment"
+            app:popUpTo="@id/signInFragment2"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment2"
+        android:name="com.example.e_commerce_store.Auth.ui.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" />
+</navigation>

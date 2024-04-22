@@ -9,8 +9,6 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
        />
-
-
     <ProgressBar
         android:id="@+id/progress_bar"
         style="?android:attr/progressBarStyle"

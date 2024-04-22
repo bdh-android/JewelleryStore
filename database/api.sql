@@ -2348,9 +2348,6 @@ CREATE TABLE `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(19, 'rema', 'rema@gmail.com', NULL, '$2y$10$Z3Fk59qlLtCxYgTrNvcOK.5Gz6Ile1HMTe6ykPpYgQXnI1PPqPjKe', NULL, '2021-01-03 08:19:32', '2021-01-03 08:19:32');
-
 --
 -- Indexes for dumped tables
 --

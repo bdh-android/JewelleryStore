@@ -8,8 +8,8 @@ import android.os.Bundle;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.e_commerce_store.broadcast.NetworkReceiver;
-import com.example.e_commerce_store.utils.OnNetworkChanged;
+import com.example.e_commerce_store.core.broadcast.NetworkReceiver;
+import com.example.e_commerce_store.core.utils.OnNetworkChanged;
 import com.google.android.material.snackbar.Snackbar;
 
 
@@ -28,8 +28,8 @@ public class BaseActivity extends AppCompatActivity implements OnNetworkChanged 
     @Override
     protected void onStart() {
         super.onStart();
-       registerReceiver(networkReceiver,new IntentFilter("android.net.conn.CONNECTIVITY_CHANGE"));
-       }
+        registerReceiver(networkReceiver,new IntentFilter("android.net.conn.CONNECTIVITY_CHANGE"));
+    }
 
 
     @Override
@@ -50,12 +50,12 @@ public class BaseActivity extends AppCompatActivity implements OnNetworkChanged 
 
     }
 
-    void ShowSnackBarMsg(String msg,int color){
+    public void ShowSnackBarMsg(String msg,int color){
 
-            snackbar = Snackbar.make(this.getWindow().getDecorView().findViewById(android.R.id.content),
-                    msg, Snackbar.LENGTH_LONG);
+        snackbar = Snackbar.make(this.getWindow().getDecorView().findViewById(android.R.id.content),
+                msg, Snackbar.LENGTH_LONG);
 
-            snackbar.setBackgroundTint(getResources().getColor(color));
+        snackbar.setBackgroundTint(getResources().getColor(color));
 
         snackbar.show();
 

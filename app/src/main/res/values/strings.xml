@@ -41,7 +41,7 @@
     <string name="e_order_date">Order Date :</string>
     <string name="e_place_an_order">Place an order and pay</string>
     <string name="e_payment_des">click on the button below and choose your payment method</string>
-    <string name="e_an_address">Add an address</string>
+    <string name="e_an_address">Add Your Address</string>
     <string name="e_address_line_1">Address Line 1</string>
     <string name="e_address_line_2">Address Line 2 (Optional)</string>
     <string name="e_country">Country</string>
@@ -52,4 +52,7 @@
     <string name="e_next">next</string>
     <string name="e_success">Payment Success</string>
     <string name="e_failed">Payment Failed</string>
+    <string name="user_name">Name</string>
+    <string name="user_email">Email</string>
+
 </resources>

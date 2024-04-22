@@ -24,7 +24,7 @@ use ResponseTrait;
             $products=Product::where('category_id',$category->id)->limit(6)->get();
             $category->products=$products;
         }
-		sleep(2);//to simulate delay from real server
+		
         return $this->returnData("data",$categories,"S000",$msg="");
          
     }

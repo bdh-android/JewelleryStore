@@ -49,7 +49,7 @@
 
                 />
 
-            <com.example.e_commerce_store.view.QuantityView
+            <com.example.e_commerce_store.core.view.QuantityView
                 android:id="@+id/quantity1"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"

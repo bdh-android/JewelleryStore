@@ -33,7 +33,8 @@ public function returnData($key="data",$value="",$errCode="S000",$msg=""){
 
 
 public function returnValidationError($code="E0011",$validator){
-	return $this->returnData("error","",$code,$validator->errors()->first());
+	//return $this->returnData("error","",$code,$validator->errors()->first());
+	return $this->returnError($code,$validator->errors()->first());
 }
 public function returnCodeAccordingToInput($validator){
 	$input=array_keys($validator->errors()->toArray());
